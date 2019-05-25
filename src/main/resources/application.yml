@@ -1,0 +1,34 @@
+spring:
+#   cache:
+#     type: redis
+#     redis:
+#       cache-null-values: false
+#       time-to-live: 10000
+#       use-key-prefix: true
+#   redis:
+#     port: 
+#     host: 
+#     password:
+#     lettuce:
+#       pool:
+#         max-active: 10
+#         max-wait: 100ms
+#         min-idle: 5
+#         max-idle: 5
+
+datasource:
+  api:
+    url: http://analytics05.cricket.net/xquery/espn/player
+---
+spring:
+  profiles: stage
+#   redis:
+#     port: 
+#     host: 
+
+---
+spring:
+  profiles: prod
+#   redis:
+#     port: 
+#     host:

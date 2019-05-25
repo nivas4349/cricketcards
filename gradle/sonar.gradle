@@ -1,0 +1,25 @@
+apply plugin: 'org.sonarqube'
+ext.analysisMode = project.hasProperty('sonarAnalysisMode') ? project.getProperty('sonarAnalysisMode') : ''
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "Cricket-Cards"
+        property "sonar.projectKey", "cricket-cards"
+        property "sonar.host.url", ""
+        property "sonar.analysis.mode", analysisMode
+        property "sonar.issuesReport.html.enable", true
+        property "sonar.scm.disabled", "true"
+        property "sonar.language", "java"
+        property "sonar.includePlugins", "java"
+        property "sonar.jacoco.reportPaths", "${project.buildDir}/jacoco/"
+        property "sonar.junit.reportsPath", "${project.buildDir}/test-results/test"
+        property "sonar.java.source", "1.8"
+        property "sonar.preview.includePlugins", "buildbreaker,java"
+        property "sonar.coverage.exclusions", project.coverageExclusions.join(',')
+        property "sonar.exclusions", project.coverageExclusions.join(',')
+
+        //if (analysisMode.equals("")) {
+        //  property "sonar.projectDate", "${new Date().next().format("yyyy-MM-dd'T'HH:mm:ssZ")}"
+        //}
+    }
+}

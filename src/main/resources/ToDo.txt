@@ -1,0 +1,77 @@
+============= Many Modifications are Anticipated ===============
+Phase 1(Only ODIs):
+-------------------
+* DB end to end design
+	- Player table(ID(Incremental), CricInfoId, Full Name, Country, DOB, Playing role, 
+		Batting style, Bowling style, Height) 
+	- table for ODIs (type of player, category of player, Statistics - Mat, Notouts, 
+		Runs, Highest, Bat.Ave, Strike rate, 100/50, 4s/6s, Catch, Stumpings, Balls Bowled,
+		Wickets, Best Bowling, Bowl Ave, Econ)
+	- Table for	category - coin mapping
+	- table for user authentication
+	- table for user management(coins balance, coins earned, Coins spent, 
+		track cards(using cricinfoId), unlocked by that user, total number 
+		of cards unlocked out of xyz total) 
+	- type of player
+		1. Batsman
+		2. Bowler
+		3. Keeper
+	- category of Player
+		1. Platinum
+		2. Gold
+		3. Silver
+		4. Bronze
+* Sample Data for Dev Env
+* SQL Queries to do CRUD operations
+* Java DTO - Do all Java code in GIT
+* Entity Manager(Hibernate Setup)
+* RESTful APIs (For player insert/update, single click update statistics of all players,
+	
+	User Management(Including admin (Only Myself)) - SignUp Process(Facebook, google, 
+	Cricket Cards account), login process, retrieve account, forgot pwd)
+* Authentication (These APIs should be really secured, and only accessible by only 
+	our 3 Clients)
+* Role based Authorization
+* Batch for periodic statistic updates for all players
+* batch for updating category of players depending on rules()
+
+Phase 2(UI for WebAPP, Android, iOS):
+-------------------------------------
+* Hire art designer for card look (look should be close to cricket card battle)
+* Do research on UX, on how the motion of card should be
+* First complete end to end WebAPP, include PIWIK user action tracking
+* Do thorough analysis to find out how single code change reflects for all the UIs used,
+	like when we do code change, it should reflect in Android, iOS Apps.  
+
+Phase 3(Review Performance, Plan on business model and release to App store, Google Play):
+------------------------------------------------------------------------------------------
+* Look for open source code evaluators
+* Review and tune performance
+* Do research and choose the right business model (Available App Store/Google play revenue
+	models)
+* you can count on ad hosting for income in your webapp, ios, android apps
+* Take care of copy right issues
+* deploy and release to App store, google play
+* if needed, create
+
+Phase 4(Multi Player):
+----------------------
+Track who is online and invite friend for a game
+award 5 bronze card equivalent coins(For EX: 100 for each card) for 50 max/day invitations 
+sent, and award 10 bronze card equivalent coins(For EX: 100 for each card) for each new 
+friend buying atleast 1 silver card    
+
+Phase 5():
+----------
+
+End Goal:
+---------
+* International (ODIs, Tests, T20I)
+* IPL
+* BPL
+* PSL
+* Big Bash
+* Natwest T20
+* Carrabean PL
+* South Africa
+* WWF

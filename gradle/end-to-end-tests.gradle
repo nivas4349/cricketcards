@@ -1,0 +1,22 @@
+sourceSets {
+    endToEndTest {
+        java {
+            compileClasspath += main.output + test.output
+            runtimeClasspath += main.output + test.output
+            srcDir file('src/endToEndTest/java')
+        }
+        //resources.srcDir file('src/endToEndTest/resources')
+    }
+}
+
+configurations {
+    endToEndTestCompile.extendsFrom testCompile
+    endToEndTestRuntime.extendsFrom testRuntime
+}
+
+task endToEndTest(type: Test) {
+    testClassesDirs = sourceSets.endToEndTest.output.classesDirs
+    classpath = sourceSets.endToEndTest.runtimeClasspath
+
+    reports.html.destination = file("${reporting.baseDir}/${name}")
+}
