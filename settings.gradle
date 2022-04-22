@@ -3,4 +3,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'cricket-cards'
+rootProject.name = 'cricketcards'
