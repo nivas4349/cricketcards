@@ -4,6 +4,8 @@
 **/target
 
 /.gradle/
+/.idea/
+.settings/*
 HELP.md
 
 # Ignore Gradle GUI config

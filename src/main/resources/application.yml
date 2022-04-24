@@ -1,3 +1,4 @@
+#Ultimately move all these properties to .properties files
 spring:
 #   cache:
 #     type: redis
@@ -16,9 +17,6 @@ spring:
 #         min-idle: 5
 #         max-idle: 5
 
-datasource:
-  api:
-    url: http://analytics05.cricket.net/xquery/espn/player
 ---
 spring:
   profiles: stage

@@ -14,7 +14,6 @@ import lombok.Data;
 public class PlayerStats {
 //TODO : Mark all the properties which can be null  
 
-	@JsonProperty("matches")
 	@NotNull
 	//matches = 0 means invalid object
     private int matches;
@@ -23,7 +22,6 @@ public class PlayerStats {
 	@NotNull
 	private int batsmanInnings;
 	
-	@JsonProperty("sixes")
 	@NotNull
 	private int sixes;
 	
@@ -59,7 +57,6 @@ public class PlayerStats {
 	@NotNull
 	private int threeWickets;
 	
-	@JsonProperty("hundreds")
 	@NotNull
     private int hundreds;
 	
@@ -79,11 +76,9 @@ public class PlayerStats {
 	@NotNull
     private int bowlerMaidens;
 	
-	@JsonProperty("fifties")
 	@NotNull
     private int fifties;
 	
-	@JsonProperty("fours")
 	@NotNull
     private int fours;
 
@@ -95,7 +90,6 @@ public class PlayerStats {
 	@NotNull
     private double battingAverage;
 	
-	@JsonProperty("economy")
 	@NotNull
     private float economy;
 	

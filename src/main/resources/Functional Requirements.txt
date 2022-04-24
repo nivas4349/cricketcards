@@ -2,8 +2,11 @@ Phase 1:
 --------
 * If user(host) has odd number of cards, he will be given option to choose b/w extra card
 	or first turn. If even, coin toss for first turn 
-* Have 10-12 statistics like Mat, Notouts, Runs, Highest, Bat.Ave, Strike rate, 100/50,
-	4s/6s, Catch, Stumpings, Balls Bowled, Wickets, Best Bowling, Bowl Ave, Econ
+* Have 10-12 statistics like Mat, Notouts, Runs, Highest, Bat.Ave, Bat.Strike rate, 100s, 
+	50s, 4s, 6s, Catch, Stumpings, Balls Bowled, Wickets, Best Bowling, Bowl Ave, Bowl.Strike rate, Econ
 * Implement best of three when you have 3 or less than 3
 * If a keeper didn't bowl atleast one ball, then block comparing with bowler statistics
+* If any player didn't keep wickets (i.e; stumpings='NA'), then block comparing with stumpings
 * At the end of winning (all the cards he unlocked) each match, double the reward
+* show number of cards unlocked out of xyz total
+* show coins bal for each player 
