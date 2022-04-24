@@ -9,7 +9,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableCaching
 @EnableFeignClients
 public class CricketCardsApplication {
-	// TODO : split cricket cards project into it's own repo
 	// TODO : use Taken based authentication or oAuth for APIs
 	// TODO : mock controller test cases
 	// TODO : mock and write Service test cases

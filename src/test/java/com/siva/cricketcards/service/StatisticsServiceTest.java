@@ -23,8 +23,9 @@ public class StatisticsServiceTest {
 	public void testName() {
 		//starting from 858
 		// Dhoni's - 7593
-		for (int i = 7291; i < 100000; i++) {
-			PlayerStats stats = statisticsService.getPlayerStats(i);
+		//Steven Smith - 646278
+		for (int i = 646278; i < 1000000; i++) {
+			PlayerStats stats = statisticsService.getPlayerStats("sr:player:"+i);
 			if (stats.getMatches() != 0)
 				System.out.println(i);
 			if (stats.getRuns() == 10500 && stats.getHighestScore().equals("183*"))
